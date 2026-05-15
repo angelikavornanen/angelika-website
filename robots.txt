@@ -1,0 +1,59 @@
+# Robots.txt for angelikavornanen.netlify.app
+# Last updated: 2026-05-15
+
+# Default: allow everyone
+User-agent: *
+Allow: /
+
+# OpenAI (ChatGPT, GPT search)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google AI (Gemini, AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (used by many LLM training sets)
+User-agent: CCBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Bytespider (TikTok / ByteDance AI)
+User-agent: Bytespider
+Allow: /
+
+# Sitemap
+Sitemap: https://angelikavornanen.netlify.app/sitemap.xml
