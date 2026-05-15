@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angelika Vornanen — Performance UGC that drives measurable results</title>
+<meta name="description" content="Direct Response UGC Creator · IFBB Athlete & Certified PT · Wellness, fitness, outdoor & travel brands. Available in Finland & internationally.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{
+  --sand:#F5EFE6;
+  --cream:#FAF5EC;
+  --forest:#2C3E2D;
+  --forest-soft:#3D4A33;
+  --terracotta:#C87F5C;
+  --sunset:#E07856;
+  --dark:#2B2420;
+  --muted:#6B6259;
+  --line:rgba(43,36,32,.12);
+  --shadow:0 10px 30px rgba(43,36,32,.08);
+  --shadow-lg:0 20px 60px rgba(43,36,32,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--sand);
+  color:var(--dark);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.serif{font-family:'Playfair Display',serif}
+.sans{font-family:'Inter',sans-serif}
+
+/* NAV */
+header{position:sticky;top:0;z-index:100;background:rgba(245,239,230,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--forest);text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--terracotta)}
+.nav-links{display:flex;gap:36px}
+.nav-links a{text-decoration:none;color:var(--dark);font-size:14px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--terracotta)}
+.lang{display:flex;gap:8px;font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.1em}
+.lang span.active{color:var(--forest)}
+.mobile-toggle{display:none;background:none;border:none;font-size:22px;color:var(--forest);cursor:pointer}
+
+/* HERO */
+.hero{padding:80px 0 40px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.hero-tag{display:inline-block;padding:8px 16px;background:rgba(200,127,92,.12);color:var(--terracotta);border-radius:50px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px}
+.hero h1{font-size:clamp(40px,5.5vw,72px);font-weight:900;color:var(--forest);margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--terracotta);font-weight:500}
+.hero .tagline{font-size:20px;color:var(--muted);margin-bottom:32px;max-width:520px;line-height:1.5}
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.meta-chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;background:var(--cream);border:1px solid var(--line);border-radius:50px;font-size:13px;color:var(--dark);font-weight:500}
+.meta-chip i{color:var(--terracotta);font-size:11px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;transition:all .3s;cursor:pointer;border:none;font-family:inherit}
+.btn-primary{background:var(--forest);color:var(--cream)}
+.btn-primary:hover{background:var(--forest-soft);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.btn-secondary{background:transparent;color:var(--forest);border:1.5px solid var(--forest)}
+.btn-secondary:hover{background:var(--forest);color:var(--cream)}
+.hero-img{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:linear-gradient(135deg,var(--forest) 0%,var(--forest-soft) 100%);display:flex;align-items:center;justify-content:center;color:var(--cream);box-shadow:var(--shadow-lg)}
+.hero-img-placeholder{text-align:center;padding:40px}
+.hero-img-placeholder i{font-size:80px;opacity:.4;margin-bottom:16px;display:block}
+.hero-img-placeholder small{font-size:12px;opacity:.6;letter-spacing:.1em;text-transform:uppercase}
+
+/* STATS BAR */
+.stats{background:var(--forest);color:var(--cream);padding:48px 0;margin:60px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:var(--terracotta);line-height:1;margin-bottom:8px}
+.stat-label{font-size:13px;opacity:.85;letter-spacing:.05em;text-transform:uppercase;font-weight:500}
+
+/* CLIENTS */
+.section{padding:80px 0}
+.section-tag{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--terracotta);font-weight:600;margin-bottom:12px}
+.section-title{font-size:clamp(32px,4vw,48px);color:var(--forest);margin-bottom:16px}
+.section-intro{font-size:17px;color:var(--muted);max-width:640px;margin-bottom:48px}
+.clients-row{display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:center;padding:32px 0;opacity:.85}
+.client-logo{padding:16px 32px;background:var(--cream);border:1px solid var(--line);border-radius:12px;font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--forest);letter-spacing:.02em;transition:all .3s}
+.client-logo:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+
+/* FEATURES */
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.feature{background:var(--cream);padding:36px 30px;border-radius:20px;border:1px solid var(--line);transition:transform .3s}
+.feature:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.feature-icon{width:52px;height:52px;border-radius:14px;background:rgba(200,127,92,.14);color:var(--terracotta);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:20px}
+.feature h3{font-size:22px;color:var(--forest);margin-bottom:12px}
+.feature p{font-size:15px;color:var(--muted);line-height:1.6}
+
+/* PORTFOLIO */
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+.portfolio-card{background:var(--cream);border-radius:24px;overflow:hidden;border:1px solid var(--line);transition:all .3s}
+.portfolio-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.phone-frame{padding:20px 20px 0;background:linear-gradient(180deg,var(--forest) 0%,var(--forest-soft) 100%);display:flex;justify-content:center}
+.phone{width:100%;max-width:220px;aspect-ratio:9/19;background:#000;border-radius:28px 28px 0 0;border:4px solid #1a1a1a;border-bottom:none;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.4);font-size:42px}
+.phone::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:60px;height:16px;background:#000;border-radius:0 0 16px 16px;z-index:2}
+.portfolio-content{padding:26px 28px 28px}
+.portfolio-brand{font-size:12px;color:var(--terracotta);font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:8px}
+.portfolio-title{font-size:18px;color:var(--forest);margin-bottom:10px;font-family:'Inter',sans-serif;font-weight:700}
+.portfolio-quote{font-size:14px;color:var(--muted);font-style:italic;margin-bottom:16px;line-height:1.5}
+.portfolio-results{display:flex;gap:16px;padding-top:14px;border-top:1px solid var(--line);flex-wrap:wrap}
+.result{flex:1;min-width:80px}
+.result-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--forest);line-height:1}
+.result-label{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-top:4px}
+
+/* ABOUT */
+.about{background:var(--cream);padding:80px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center}
+.about-img{border-radius:24px;overflow:hidden;aspect-ratio:4/5;background:linear-gradient(135deg,var(--terracotta) 0%,var(--sunset) 100%);display:flex;align-items:center;justify-content:center;color:var(--cream);box-shadow:var(--shadow-lg)}
+.about-img-placeholder{text-align:center;padding:40px}
+.about-img-placeholder i{font-size:80px;opacity:.5;margin-bottom:16px;display:block}
+.about-bullets{list-style:none;margin-top:28px}
+.about-bullets li{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--dark)}
+.about-bullets li:last-child{border-bottom:none}
+.about-bullets li i{color:var(--terracotta);font-size:14px;margin-top:4px;flex-shrink:0;width:20px}
+.about-bullets strong{color:var(--forest);font-weight:600;margin-right:4px}
+.about-bg{margin-top:32px;padding:20px 24px;background:var(--sand);border-left:3px solid var(--terracotta);border-radius:0 8px 8px 0}
+.about-bg small{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:600;display:block;margin-bottom:6px}
+.about-bg p{font-size:14px;color:var(--dark)}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.service-card{background:var(--cream);border-radius:24px;padding:40px 32px;border:1px solid var(--line);position:relative;transition:all .3s;display:flex;flex-direction:column}
+.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.service-card.featured{background:var(--forest);color:var(--cream);border-color:var(--forest);transform:scale(1.02)}
+.service-card.featured .service-name,.service-card.featured .service-price,.service-card.featured .service-includes strong{color:var(--cream)}
+.service-card.featured .service-includes li{color:rgba(250,245,236,.9)}
+.service-card.featured .service-tag{background:var(--terracotta);color:var(--cream)}
+.service-tag{position:absolute;top:-12px;left:32px;padding:6px 14px;background:var(--terracotta);color:var(--cream);border-radius:50px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.service-name{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--forest);margin-bottom:4px}
+.service-sub{font-size:13px;color:var(--muted);margin-bottom:20px;letter-spacing:.05em;text-transform:uppercase;font-weight:500}
+.service-card.featured .service-sub{color:rgba(250,245,236,.7)}
+.service-price{font-family:'Playfair Display',serif;font-size:44px;font-weight:900;color:var(--forest);margin-bottom:4px;line-height:1}
+.service-price small{font-size:14px;color:var(--muted);font-weight:400}
+.service-card.featured .service-price small{color:rgba(250,245,236,.7)}
+.service-desc{font-size:14px;color:var(--muted);margin:16px 0 24px;line-height:1.5}
+.service-card.featured .service-desc{color:rgba(250,245,236,.8)}
+.service-includes{list-style:none;margin-bottom:28px;flex-grow:1}
+.service-includes li{padding:8px 0;font-size:14px;color:var(--dark);display:flex;gap:10px;align-items:flex-start}
+.service-includes li i{color:var(--terracotta);font-size:12px;margin-top:5px;flex-shrink:0}
+.service-card.featured .service-includes li i{color:var(--sand)}
+.service-cta{width:100%;text-align:center;padding:14px 20px;background:var(--forest);color:var(--cream);border-radius:50px;text-decoration:none;font-weight:600;font-size:14px;transition:all .3s}
+.service-card.featured .service-cta{background:var(--cream);color:var(--forest)}
+.service-cta:hover{opacity:.9;transform:translateY(-2px)}
+
+/* TESTIMONIAL */
+.testimonial{background:var(--forest);color:var(--cream);padding:80px 0;text-align:center;border-radius:32px;margin:40px auto;max-width:1000px}
+.testimonial .section-tag{color:var(--terracotta)}
+.testimonial blockquote{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,34px);font-style:italic;font-weight:500;line-height:1.4;max-width:720px;margin:0 auto 32px;color:var(--cream)}
+.testimonial cite{font-style:normal;font-size:14px;opacity:.8;letter-spacing:.05em}
+.testimonial cite strong{color:var(--terracotta);display:block;font-size:16px;margin-bottom:4px;letter-spacing:0}
+.placeholder-note{display:inline-block;margin-top:20px;padding:6px 14px;background:rgba(224,120,86,.2);color:var(--terracotta);border-radius:50px;font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:700}
+
+/* CONTACT */
+.contact{padding:80px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:40px}
+.contact-channels{display:grid;gap:14px}
+.channel{display:flex;align-items:center;gap:20px;padding:22px 26px;background:var(--cream);border:1px solid var(--line);border-radius:20px;text-decoration:none;color:var(--dark);transition:all .3s}
+.channel:hover{transform:translateX(6px);box-shadow:var(--shadow);border-color:var(--terracotta)}
+.channel-icon{width:52px;height:52px;border-radius:14px;background:var(--forest);color:var(--cream);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.channel-icon.ig{background:linear-gradient(135deg,#F58529,#DD2A7B,#8134AF)}
+.channel-icon.tiktok{background:#000}
+.channel-icon.email{background:var(--terracotta)}
+.channel-icon.wa{background:#25D366}
+.channel-label{font-size:12px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;font-weight:600;margin-bottom:2px}
+.channel-value{font-size:16px;color:var(--forest);font-weight:600}
+.contact-form{background:var(--cream);padding:40px;border-radius:24px;border:1px solid var(--line)}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:12px;font-weight:600;color:var(--forest);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.form-group input,.form-group textarea{width:100%;padding:14px 16px;background:var(--sand);border:1px solid var(--line);border-radius:12px;font-family:inherit;font-size:15px;color:var(--dark);transition:border .2s}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--terracotta)}
+
+/* FOOTER */
+footer{background:var(--forest);color:var(--cream);padding:60px 0 30px;margin-top:60px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.foot-brand h4{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:8px}
+.foot-brand p{font-size:14px;opacity:.75;max-width:320px}
+.foot-col h5{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:14px}
+.foot-col a{display:block;font-size:14px;color:var(--cream);opacity:.8;text-decoration:none;margin-bottom:8px;transition:opacity .2s}
+.foot-col a:hover{opacity:1}
+.foot-bottom{padding-top:28px;border-top:1px solid rgba(245,239,230,.15);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:12px;opacity:.65}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:24px}
+  .features,.portfolio-grid,.services-grid{grid-template-columns:1fr}
+  .service-card.featured{transform:none}
+  .about-grid,.contact-grid,.foot-grid{grid-template-columns:1fr;gap:40px}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--sand);flex-direction:column;padding:20px 24px;gap:16px;border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .mobile-toggle{display:block}
+  .section{padding:60px 0}
+  .hero{padding:48px 0 24px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <div class="container">
+    <nav class="nav">
+      <a href="#" class="logo">ANGELIKA<span>·</span>UGC</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="lang">
+        <span class="active">EN</span>
+        <span>·</span>
+        <span>FI</span>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-tag">Direct Response UGC Creator</span>
+        <h1>Performance UGC that <em>drives measurable results.</em></h1>
+        <p class="tagline">I create authentic, conversion-focused videos for wellness, fitness, outdoor and travel brands — backed by 5+ years in social media and marketing.</p>
+        <div class="hero-meta">
+          <span class="meta-chip"><i class="fas fa-medal"></i> IFBB Athlete</span>
+          <span class="meta-chip"><i class="fas fa-dumbbell"></i> Certified PT</span>
+          <span class="meta-chip"><i class="fas fa-map-marker-alt"></i> Finland · Worldwide</span>
+          <span class="meta-chip"><i class="fas fa-language"></i> FI · EN</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary">See my work <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-secondary">Book a call</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="hero-img-placeholder">
+          <i class="fas fa-camera-retro"></i>
+          <small>Hero photo<br>(Angelika in action)</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Years in social &amp; marketing</div>
+      </div>
+      <div>
+        <div class="stat-num">3.2M</div>
+        <div class="stat-label">Views delivered*</div>
+      </div>
+      <div>
+        <div class="stat-num">4.2x</div>
+        <div class="stat-label">Best campaign ROAS*</div>
+      </div>
+      <div>
+        <div class="stat-num">24–48h</div>
+        <div class="stat-label">Delivery time</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="section">
+  <div class="container">
+    <span class="section-tag">Trusted by</span>
+    <h2 class="section-title">Brands I've worked with</h2>
+    <p class="section-intro">Carefully selected UGC collaborations — every project tailored to measurable performance.</p>
+    <div class="clients-row">
+      <div class="client-logo">VAISTOA</div>
+      <div class="client-logo">KIPUKAUPPA</div>
+      <div class="client-logo" style="opacity:.4">YOUR BRAND</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section class="section" style="padding-top:40px" id="work">
+  <div class="container">
+    <span class="section-tag">What I do</span>
+    <h2 class="section-title">Three pillars,<br>one performance mindset.</h2>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Hooks &amp; trends</h3>
+        <p>Every video starts with a hook that stops the scroll. I track TikTok &amp; Meta Ad Library daily so your creative is always current.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-file-alt"></i></div>
+        <h3>DR scripts</h3>
+        <p>Hook + body + CTA frameworks built on proven direct-response principles — not guessing, not trend-chasing without strategy.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Performance focus</h3>
+        <p>I measure what I make. Every script is designed to move CTR, CVR and ROAS — not just look good in a feed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section">
+  <div class="container">
+    <span class="section-tag">Featured work</span>
+    <h2 class="section-title">Selected case studies</h2>
+    <p class="section-intro">Real campaigns, real numbers. Click any card to watch the full breakdown.</p>
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card">
+        <div class="phone-frame"><div class="phone"><i class="fas fa-play-circle"></i></div></div>
+        <div class="portfolio-content">
+          <div class="portfolio-brand">Vaistoa · Barefoot Shoes</div>
+          <div class="portfolio-title">Story-based footwear UGC</div>
+          <p class="portfolio-quote">"Why my feet never hurt anymore" — authentic story structure built for cold-traffic conversions.</p>
+          <div class="portfolio-results">
+            <div class="result"><div class="result-num">[views]</div><div class="result-label">Reach</div></div>
+            <div class="result"><div class="result-num">[CTR]</div><div class="result-label">Click-through</div></div>
+            <div class="result"><div class="result-num">[ROAS]</div><div class="result-label">Return</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="phone-frame"><div class="phone"><i class="fas fa-play-circle"></i></div></div>
+        <div class="portfolio-content">
+          <div class="portfolio-brand">Kipukauppa · Pain Relief</div>
+          <div class="portfolio-title">POV product demo</div>
+          <p class="portfolio-quote">Problem → solution structure paired with authentic home-setting B-roll. Designed for retargeting.</p>
+          <div class="portfolio-results">
+            <div class="result"><div class="result-num">[views]</div><div class="result-label">Reach</div></div>
+            <div class="result"><div class="result-num">[CTR]</div><div class="result-label">Click-through</div></div>
+            <div class="result"><div class="result-num">[ROAS]</div><div class="result-label">Return</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="phone-frame"><div class="phone"><i class="fas fa-play-circle"></i></div></div>
+        <div class="portfolio-content">
+          <div class="portfolio-brand">Wellness · Placeholder</div>
+          <div class="portfolio-title">Your campaign here</div>
+          <p class="portfolio-quote">Looking for a UGC creator who understands performance creative? Let's build something measurable.</p>
+          <div class="portfolio-results">
+            <div class="result" style="flex:1"><div class="result-num" style="color:var(--terracotta)">→</div><div class="result-label">Let's talk</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">
+        <div class="about-img-placeholder">
+          <i class="fas fa-user"></i>
+          <small>About photo<br>(lifestyle/portrait)</small>
+        </div>
+      </div>
+      <div>
+        <span class="section-tag">About</span>
+        <h2 class="section-title">Hi, I'm Angelika.</h2>
+        <p class="section-intro">Finnish athlete, certified trainer, and direct-response UGC creator building authentic videos for brands who care about numbers — not just vibes.</p>
+
+        <ul class="about-bullets">
+          <li><i class="fas fa-birthday-cake"></i><span><strong>Age:</strong> 29</span></li>
+          <li><i class="fas fa-map-marker-alt"></i><span><strong>Based in:</strong> Koitsanlahti, Finland — available internationally for travel collaborations</span></li>
+          <li><i class="fas fa-trophy"></i><span><strong>Credentials:</strong> IFBB athlete · Certified Personal Trainer</span></li>
+          <li><i class="fas fa-briefcase"></i><span><strong>Experience:</strong> 5+ years in social media, content &amp; marketing (since 2021) · 1+ year dedicated UGC</span></li>
+          <li><i class="fas fa-language"></i><span><strong>Languages:</strong> Finnish · English</span></li>
+          <li><i class="fas fa-heart"></i><span><strong>Niches:</strong> Wellness · Fitness · Outdoor · Travel</span></li>
+        </ul>
+
+        <div class="about-bg">
+          <small>Background</small>
+          <p>Previously contributed to content production at <strong>Veikkaus Oy</strong> (in-house role) before fully transitioning into UGC creator work. That foundation in larger-scale brand content shapes the direct-response instinct I bring to every campaign.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <span class="section-tag">Packages</span>
+    <h2 class="section-title">Simple, results-driven pricing.</h2>
+    <p class="section-intro">Three tiers built for brands at different stages. Usage rights and whitelisting scaled to fit.</p>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-name">Starter</div>
+        <div class="service-sub">For one-off launches</div>
+        <div class="service-price">€250<small>/ video</small></div>
+        <p class="service-desc">Perfect for testing UGC on your brand before scaling.</p>
+        <ul class="service-includes">
+          <li><i class="fas fa-check"></i> 1 finished UGC video (≤60s)</li>
+          <li><i class="fas fa-check"></i> Organic usage rights (6 months)</li>
+          <li><i class="fas fa-check"></i> Trend + hook proposal</li>
+          <li><i class="fas fa-check"></i> 1 revision round</li>
+        </ul>
+        <a href="#contact" class="service-cta">Get started</a>
+      </div>
+
+      <div class="service-card featured">
+        <span class="service-tag">Most popular</span>
+        <div class="service-name">Growth</div>
+        <div class="service-sub">For campaign pushes</div>
+        <div class="service-price">€600<small>/ 3 videos</small></div>
+        <p class="service-desc">The package most clients choose when they're ready to scale spend.</p>
+        <ul class="service-includes">
+          <li><i class="fas fa-check"></i> 3 UGC videos (≤60s each)</li>
+          <li><i class="fas fa-check"></i> Organic + paid media usage (12 months)</li>
+          <li><i class="fas fa-check"></i> Meta Ad Library audit</li>
+          <li><i class="fas fa-check"></i> 3 bespoke hook/body/CTA scripts</li>
+          <li><i class="fas fa-check"></i> 2 revision rounds per video</li>
+          <li><i class="fas fa-check"></i> Whitelisting support</li>
+        </ul>
+        <a href="#contact" class="service-cta">Book Growth</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-name">Scale</div>
+        <div class="service-sub">For serious ad budgets</div>
+        <div class="service-price">€1000<small>/ 5 videos</small></div>
+        <p class="service-desc">Long-term partnerships with performance-based pricing options.</p>
+        <ul class="service-includes">
+          <li><i class="fas fa-check"></i> 5 UGC videos (≤60s each)</li>
+          <li><i class="fas fa-check"></i> All Growth benefits</li>
+          <li><i class="fas fa-check"></i> Performance option: €400 + 6% ad spend</li>
+          <li><i class="fas fa-check"></i> Priority support &amp; delivery</li>
+          <li><i class="fas fa-check"></i> Strategic planning (series, A/B testing)</li>
+        </ul>
+        <a href="#contact" class="service-cta">Scale with me</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="testimonial">
+      <span class="section-tag">What clients say</span>
+      <blockquote>"Angelika delivers UGC that actually moves the needle — sharp hooks, clean structure, and she hits every deadline."</blockquote>
+      <cite>
+        <strong>[Client name pending]</strong>
+        Marketing Lead · [Brand]
+      </cite>
+      <div class="placeholder-note">Real testimonial to replace</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <span class="section-tag">Let's work</span>
+    <h2 class="section-title">Ready to build<br>performance creative?</h2>
+    <p class="section-intro">Tell me about your brand and your goals — I usually reply within 6 hours.</p>
+
+    <div class="contact-grid">
+      <div>
+        <div class="contact-channels">
+          <a class="channel" href="https://instagram.com/angelikavornanen" target="_blank" rel="noopener">
+            <div class="channel-icon ig"><i class="fab fa-instagram"></i></div>
+            <div>
+              <div class="channel-label">Instagram DM</div>
+              <div class="channel-value">@angelikavornanen</div>
+            </div>
+          </a>
+          <a class="channel" href="https://tiktok.com/@angelikavornanen" target="_blank" rel="noopener">
+            <div class="channel-icon tiktok"><i class="fab fa-tiktok"></i></div>
+            <div>
+              <div class="channel-label">TikTok</div>
+              <div class="channel-value">@angelikavornanen</div>
+            </div>
+          </a>
+          <a class="channel" href="mailto:angelika.vornanen@icloud.com">
+            <div class="channel-icon email"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="channel-label">Email</div>
+              <div class="channel-value">angelika.vornanen@icloud.com</div>
+            </div>
+          </a>
+          <a class="channel" href="https://wa.me/" target="_blank" rel="noopener">
+            <div class="channel-icon wa"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="channel-label">WhatsApp</div>
+              <div class="channel-value">On request</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="brand">Brand / company</label>
+          <input type="text" id="brand">
+        </div>
+        <div class="form-group">
+          <label for="message">Tell me about your project</label>
+          <textarea id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <h4>Angelika Vornanen</h4>
+        <p>Direct response UGC creator · IFBB athlete &amp; certified PT · Performance creative for wellness, fitness, outdoor and travel brands.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Navigate</h5>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h5>Follow</h5>
+        <a href="https://instagram.com/angelikavornanen" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@angelikavornanen" target="_blank" rel="noopener">TikTok</a>
+        <a href="mailto:angelika.vornanen@icloud.com">Email</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; 2026 Angelika Vornanen. All rights reserved.</div>
+      <div>Finland · Available worldwide · FI · EN</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('mobileToggle').addEventListener('click',function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const id=this.getAttribute('href');
+    if(id==='#')return;
+    const t=document.querySelector(id);
+    if(t){
+      e.preventDefault();
+      window.scrollTo({top:t.offsetTop-70,behavior:'smooth'});
+      document.getElementById('navLinks').classList.remove('open');
+    }
+  });
+});
+const form=document.getElementById('contactForm');
+if(form){
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    alert('Thanks! I\u2019ll get back to you within 6 hours.');
+    form.reset();
+  });
+}
+</script>
+</body>
+</html>
