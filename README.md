@@ -14,3 +14,7 @@ Personal portfolio website for Angelika Vornanen — Direct Response UGC Creator
 
 ## Updates
 Maintained by AI-Angie assistant via direct commits to `main`.
+
+## Deploy pipeline
+- GitHub `main` branch → Netlify auto-deploy (~30s)
+- Tested: 2026-05-15 ✅
