@@ -10,4 +10,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://angelikavornanen.netlify.app/?lang=en"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://angelikavornanen.netlify.app/"/>
   </url>
+  <url>
+    <loc>https://angelikavornanen.netlify.app/blog/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://angelikavornanen.netlify.app/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelikavornanen.netlify.app/blog/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://angelikavornanen.netlify.app/blog/"/>
+  </url>
+  <url>
+    <loc>https://angelikavornanen.netlify.app/blog/paljonko-ugc-video-maksaa-suomessa-2026/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://angelikavornanen.netlify.app/blog/paljonko-ugc-video-maksaa-suomessa-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://angelikavornanen.netlify.app/blog/paljonko-ugc-video-maksaa-suomessa-2026/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://angelikavornanen.netlify.app/blog/paljonko-ugc-video-maksaa-suomessa-2026/"/>
+  </url>
 </urlset>
